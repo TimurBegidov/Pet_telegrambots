@@ -14,6 +14,7 @@ login='timurbegidov@yandex.ru'
 password='5223456415Bb'
 email='beg.tim@bk.ru'
 subject='Заголовок'
+new_login_url='https://'
 
 #Клавиатуры
 markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
