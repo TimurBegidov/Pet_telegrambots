@@ -1,0 +1,41 @@
+'id': 519234757 timur
+
+
+conn = sqlite3.connect('dbusers.sql')
+        cur = conn.cursor()
+
+
+
+
+
+ cur.execute(f"UPDATE users SET (id,name,contacts) VALUES('%s','%s','%s') WHERE id=('%s')" % (message.from_user.id,name,contacts,message.from_user.id))
+
+
+
+
+
+
+
+
+
+
+
+             else:
+                conn = sqlite3.connect('dbusers.sql')
+                cur = conn.cursor()
+                cur.execute(f"UPDATE users SET (id,name,contacts) VALUES('%s','%s','%s') WHERE id='%s'" % (
+                    user_id, name, contacts, user_id))
+                conn.commit()
+                cur.close()
+                conn.close()
+                bot.send_message(message.chat.id, f'Данные сохранены,в скором времени мы свяжемся с вами.',
+                                 parse_mode='html',
+                                 reply_markup=markup_back)
+
+
+                                 cur.close()
+        conn.close()
+        for el in bdusers:
+            if str(el) != message.from_user.id:
+
+
