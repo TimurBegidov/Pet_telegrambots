@@ -5,8 +5,7 @@ class ind():
         self.d = d
         result = d * f
         return result
-
-
+    #dsfsdfsdf
 p = ind()
 
 print(p.plusik(5,6))
